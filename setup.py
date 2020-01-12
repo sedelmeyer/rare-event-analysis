@@ -24,17 +24,17 @@ def read(*names, **kwargs):
 
 
 setup(
-    name='mobile-payment-adoption',
+    name='rare-events-analysis',
     version='0.0.0',
     license='MIT license',
-    description='An analysis of mobile payment adoption based on data from the 2009 Survey of Consumer Payment Choice (SCPC).',
+    description='An investigation of methods used for the statistical and predictive analysis of rare events.',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     ),
     author='Michael Sedelmeyer',
     author_email='20605812+sedelmeyer@users.noreply.github.com',
-    url='https://github.com/sedelmeyer/mobile-payment-adoption',
+    url='https://github.com/sedelmeyer/rare-events-analysis',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -67,7 +67,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'mobile-payment = mobile_payment.cli:main',
+            'rare-events = rare_events.cli:main',
         ]
     },
     use_scm_version=True,

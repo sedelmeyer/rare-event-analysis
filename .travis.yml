@@ -30,4 +30,4 @@ jobs:
 
     - stage: answers
       script:
-      - python3 -m mobile_payment
+      - python3 -m rare_events
