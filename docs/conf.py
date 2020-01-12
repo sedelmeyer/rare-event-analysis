@@ -27,7 +27,7 @@ copyright = '{0}, {1}'.format(year, author)
 # using setuptools_scm
 try:
     from pkg_resources import get_distribution
-    version = release = get_distribution('mobile_payment').version
+    version = release = get_distribution('mobile-payment-adoption').version
 except Exception:
     traceback.print_exc()
     version = release = '0.0.0'

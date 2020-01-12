@@ -2,7 +2,7 @@
    at least contain the root `toctree` directive.
 
 Welcome to Mobile Payment Adoption's documentation!
-===============================================
+===================================================
 
 .. toctree::
    :maxdepth: 2

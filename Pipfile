@@ -11,6 +11,12 @@ sphinx = "*"
 
 [packages]
 mobile_payment = {editable = true,path = "."}
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+jupyter = "*"
+matplotlib = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.7"
