@@ -1,8 +1,8 @@
 .. Mobile Payment Adoption documentation master file. This file should
    at least contain the root `toctree` directive.
 
-Welcome to Mobile Payment Adoption's documentation!
-===================================================
+An investigation into methods and implementations for rare events analysis using Python
+========================================================================================
 
 .. toctree::
    :maxdepth: 2
