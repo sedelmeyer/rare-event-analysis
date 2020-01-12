@@ -12,13 +12,15 @@
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../src'))
+import traceback
+from pkg_resources import get_distribution
 
+sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Mobile Payment Adoption'
-year = '2017'\
+project = 'Rare Events Analysis'
+year = '2012'\
     '-2020'
 author = 'Michael Sedelmeyer'
 copyright = '{0}, {1}'.format(year, author)
@@ -26,8 +28,7 @@ copyright = '{0}, {1}'.format(year, author)
 # The full version, including alpha/beta/rc tags, updated
 # using setuptools_scm
 try:
-    from pkg_resources import get_distribution
-    version = release = get_distribution('mobile-payment-adoption').version
+    version = release = get_distribution('rare-events-analysis').version
 except Exception:
     traceback.print_exc()
     version = release = '0.0.0'
@@ -70,8 +71,7 @@ source_suffix = {
 html_theme = 'alabaster'
 
 # html_baseurl is configured for GitHub's docs hosting
-html_baseurl = 'https://sedelmeyer.github.io/'\
-    'mobile-payment-adoption-temp/'
+html_baseurl = 'https://sedelmeyer.github.io/rare-events-analysis/'
 
 # uncomment to include auto-generated update data in html footer
 # html_last_updated_fmt = '%Y-%m-%d'
@@ -79,7 +79,7 @@ html_baseurl = 'https://sedelmeyer.github.io/'\
 # If using alabaster theme and hiding 'logo_name', use the 'logo' setting
 # in html_theme_options, otherwise, uncomment html_logo to activate the logo
 # html_logo = 'logo.png'
-# html_favicon = 'favicon.ico'
+html_favicon = '_static/favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -88,12 +88,13 @@ html_static_path = ['_static']
 
 # html theme options for alabaster
 html_theme_options = {
-    #'logo': 'logo.png',
+    'logo': 'logo.png',
     'logo_name': 'true',
     'github_user': 'sedelmeyer',
-    'github_repo': 'mobile-payment-adoption-temp',
+    'github_repo': 'rare-events-analysis',
     'fixed_sidebar': 'false',
-    'description': 'An analysis of mobile payment adoption based on data from the 2009 Survey of Consumer Payment Choice (SCPC).',
+    'description': 'An investigation of methods used for the '\
+                   'statistical and predictive analysis of rare events.',
     'badge_branch': 'master',
     'github_banner': 'true',
     'github_button': 'true',
@@ -101,6 +102,9 @@ html_theme_options = {
     'show_powered_by': 'true',
     'show_relbar_bottom': 'true',
     'extra_nav_links': {
+        'Find me online at sedelmeyer.net': 'https://www.sedelmeyer.net/',
+        'github/sedelmeyer': 'https://github.com/sedelmeyer',
+        'linkedin/sedelmeyer': 'https://www.linkedin.com/in/sedelmeyer/'
     }
 }
 
