@@ -1,13 +1,13 @@
-Mobile Payment Adoption
-=======================
+Rare Events Analysis
+====================
 
-An analysis of mobile payment adoption based on data from the 2009 Survey of Consumer Payment Choice (SCPC), in which I attempt to replicate, using common Python libraries, a 2012 analysis I originally performed using Stata_ statistical software.
+This project investigates methods used for the statistical and predictive analysis of `rare events`_.
 
-.. image:: https://travis-ci.com/sedelmeyer/mobile-payment-adoption.svg?branch=master
-    :target: https://travis-ci.com/sedelmeyer/mobile-payment-adoption
+.. image:: https://travis-ci.com/sedelmeyer/rare-events-analysis.svg?branch=master
+    :target: https://travis-ci.com/sedelmeyer/rare-events-analysis
 
-* **GitHub repo:** https://github.com/sedelmeyer/mobile-payment-adoption
-* **Written analysis and project documentation:** https://sedelmeyer.github.io/mobile-payment-adoption **[NOT YET AVAILABLE]**
+* **GitHub repo:** https://github.com/sedelmeyer/rare-events-analysis
+* **Written analysis and project documentation:** https://sedelmeyer.github.io/rare-events-analysis **[NOT YET AVAILABLE]**
 
 .. contents:: Contents
   :local:
@@ -17,16 +17,9 @@ An analysis of mobile payment adoption based on data from the 2009 Survey of Con
 Summary
 -------
 
-For this analysis, I attempt to replicate and build upon a set of original statistical findings I authored in 2012 while in graduate school, titled "`Conditions for Consumer Acceptance of Mobile Payment Methods In the United States`_." My original 2012 analysis was conducted using Stata version 11, the code for which has been commited to this repository as `SCPC2009_stata.do`_.
+This project contains investigations into the statistical methods used for analyzing and predicting `rare events`_. In these investigations I use common Python libraries to explore methods and generate findings. The first such investigation is motivated by an attempt to replicate and build upon a set of original statistical findings I authored in 2012 while in graduate school titled, "`Conditions for Consumer Acceptance of Mobile Payment Methods In the United States`_." My original 2012 analysis was conducted using Stata_ version 11, the code for which has been commited to this repository as `SCPC2009_stata.do`_.
 
-Tools and methods
-^^^^^^^^^^^^^^^^^
-Here I use common Python libraries to conduct my replication and explore methods related to:
-
-* Logistic regression in rare events data
-* Bootstrapping of AUC metrics and receiver operator characteristic (ROC) curves
-
-Please excuse errors and questionable choices regarding factor selection and interpretation. My original analysis was produced as a class-based research project and was author quite some time ago.
+In regards to my original mobile payment adoption analysis, please excuse errors and questionable choices regarding factor selection and interpretation. That original analysis was produced as a class-based research project and was author quite some time ago.
 
 Data Source
 ^^^^^^^^^^^
@@ -40,7 +33,7 @@ Analysis and findings
 
 The analysis and findings associated with this project can be found here:
 
-https://sedelmeyer.github.io/mobile-payment-adoption **[NOT YET AVAILABLE]**
+https://sedelmeyer.github.io/rare-events-analysis **[NOT YET AVAILABLE]**
 
 
 Source code documentation
@@ -48,7 +41,7 @@ Source code documentation
 
 Documentation for the python modules built specifically for this analysis (i.e. modules located in the ``./src/`` directory of this project) can be found here:
 
-https://sedelmeyer.github.io/mobile-payment-adoption/modules.html **[NOT YET AVAILABLE]**
+https://sedelmeyer.github.io/rare-events-analysis/modules.html **[NOT YET AVAILABLE]**
 
 .. _replication:
 
@@ -86,7 +79,7 @@ Unfortunately, because the original 2009 SCPC dataset is no longer available onl
 Adding to this project
 ----------------------
 
-If you'd like to build off of this project to explore additional methods or to practice your own data science and development skills, below are some important notes regarding the configuration of this project.
+If you'd like to build off of this project to explore additional methods or to practice your own data science and development skills, below are some important notes regarding the configuration of this project and associated packages and workflows.
 
 .. contents:: In this section
   :local:
@@ -134,6 +127,7 @@ Michael Tomz, Gary King, & Langche Zeng. "ReLogit: Rare Events Logistic Regressi
 Federal Reserve Bank of Boston, Survey of Consumer Payment Choice: https://www.bostonfed.org/publications/survey-of-consumer-payment-choice.aspx
 
 
+.. _rare events: https://en.wikipedia.org/wiki/Rare_events
 .. _Stata: https://www.stata.com/
-.. _Conditions for Consumer Acceptance of Mobile Payment Methods In the United States: ./reports/sedelmeyer-mobile-payment-20120503.pdf
-.. _SCPC2009_stata.do: ./reports/SCPC2009_stata.do
+.. _Conditions for Consumer Acceptance of Mobile Payment Methods In the United States: ./reports/mobile-payments/sedelmeyer-mobile-payment-20120503.pdf
+.. _SCPC2009_stata.do: ./reports/mobile-payments/SCPC2009_stata.do
