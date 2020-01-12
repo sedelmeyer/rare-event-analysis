@@ -10,7 +10,7 @@ flake8 = "*"
 sphinx = "*"
 
 [packages]
-mobile_payment = {editable = true,path = "."}
+rare_events = {editable = true,path = "."}
 numpy = "*"
 pandas = "*"
 scikit-learn = "*"
