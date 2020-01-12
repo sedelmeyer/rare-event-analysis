@@ -1,10 +1,13 @@
 Mobile Payment Adoption
-===============================
+=======================
 
-An analysis of mobile payment adoption based on data from the 2009 Survey of Consumer Payment Choice (SCPC).
+An analysis of mobile payment adoption based on data from the 2009 Survey of Consumer Payment Choice (SCPC), in which I attempt to replicate, using common Python libraries, a 2012 analysis I originally performed using Stata_ statistical software.
 
 .. image:: https://travis-ci.com/sedelmeyer/mobile-payment-adoption.svg?branch=master
     :target: https://travis-ci.com/sedelmeyer/mobile-payment-adoption
+
+* **GitHub repo:** https://github.com/sedelmeyer/mobile-payment-adoption
+* **Written analysis and project documentation:** https://sedelmeyer.github.io/mobile-payment-adoption **[NOT YET AVAILABLE]**
 
 .. contents:: Contents
   :local:
@@ -14,30 +17,45 @@ An analysis of mobile payment adoption based on data from the 2009 Survey of Con
 Summary
 -------
 
-.. todo::
+For this analysis, I attempt to replicate and build upon a set of original statistical findings I authored in 2012 while in graduate school, titled "`Conditions for Consumer Acceptance of Mobile Payment Methods In the United States`_." My original 2012 analysis was conducted using Stata version 11, the code for which has been commited to this repository as `SCPC2009_stata.do`_.
 
-    * Add a brief summary of this project.
+Tools and methods
+^^^^^^^^^^^^^^^^^
+Here I use common Python libraries to conduct my replication and explore methods related to:
+
+* Logistic regression in rare events data
+* Bootstrapping of AUC metrics and receiver operator characteristic (ROC) curves
+
+Please excuse errors and questionable choices regarding factor selection and interpretation. My original analysis was produced as a class-based research project and was author quite some time ago.
+
+Data Source
+^^^^^^^^^^^
+The data source used for the original analysis is the Federal Reserve Bank of Boston's 2009 Survey of Consumer Payment Choice.
+
+While it appears that the original .dta file is no longer available on the BOS FED's website, the original source URL for that data was: http://www.bos.frb.org/economic/cprc/SCPC/index.htm
+
 
 Analysis and findings
 ---------------------
 
 The analysis and findings associated with this project can be found here:
 
-https://sedelmeyer.github.io/mobile-payment-adoption
+https://sedelmeyer.github.io/mobile-payment-adoption **[NOT YET AVAILABLE]**
+
 
 Source code documentation
 -------------------------
 
 Documentation for the python modules built specifically for this analysis (i.e. modules located in the ``./src/`` directory of this project) can be found here:
 
-https://sedelmeyer.github.io/mobile-payment-adoption/modules.html
+https://sedelmeyer.github.io/mobile-payment-adoption/modules.html **[NOT YET AVAILABLE]**
 
 .. _replication:
 
 Replicating this analysis
 -------------------------
 
-In order to replicate this analysis and run the Python code available in this analysis locally, follow these steps:
+Unfortunately, because the original 2009 SCPC dataset is no longer available online and because its copyright prevents me from providing it alongside this analysis, it will not be possible for others to fully replicate this analysis. I do however still provide details below concerning the use of this repository and associated code so others can build upon the methods if they so choose.
 
 .. contents:: In this section
   :local:
@@ -109,6 +127,13 @@ Questions or issues related to this project
 Sources and additional resources
 --------------------------------
 
-.. todo::
+Gary King and Langche Zeng. 2001. “Logistic Regression in Rare Events Data.” Political Analysis, 9, Pp. 137–163: https://gking.harvard.edu/files/abs/0s-abs.shtml
 
-    * Add links to further reading and/or important resources related to this project.
+Michael Tomz, Gary King, & Langche Zeng. "ReLogit: Rare Events Logistic Regression." Journal of Statistical Software [Online], 8.2 (2003): 1 - 27. Web. 9 Sep. 2017: https://www.jstatsoft.org/article/view/v008i02
+
+Federal Reserve Bank of Boston, Survey of Consumer Payment Choice: https://www.bostonfed.org/publications/survey-of-consumer-payment-choice.aspx
+
+
+.. _Stata: https://www.stata.com/
+.. _Conditions for Consumer Acceptance of Mobile Payment Methods In the United States: ./reports/sedelmeyer-mobile-payment-20120503.pdf
+.. _SCPC2009_stata.do: ./reports/SCPC2009_stata.do
