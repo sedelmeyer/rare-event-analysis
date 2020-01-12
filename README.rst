@@ -6,6 +6,9 @@ An analysis of mobile payment adoption based on data from the 2009 Survey of Con
 .. image:: https://travis-ci.com/sedelmeyer/mobile-payment-adoption.svg?branch=master
     :target: https://travis-ci.com/sedelmeyer/mobile-payment-adoption
 
+* **GitHub repo:** https://github.com/sedelmeyer/mobile-payment-adoption
+* **Written analysis and project documentation:** https://sedelmeyer.github.io/mobile-payment-adoption **[NOT YET AVAILABLE]**
+
 .. contents:: Contents
   :local:
   :depth: 1
@@ -37,7 +40,7 @@ Analysis and findings
 
 The analysis and findings associated with this project can be found here:
 
-https://sedelmeyer.github.io/mobile-payment-adoption
+https://sedelmeyer.github.io/mobile-payment-adoption **[NOT YET AVAILABLE]**
 
 
 Source code documentation
@@ -45,7 +48,7 @@ Source code documentation
 
 Documentation for the python modules built specifically for this analysis (i.e. modules located in the ``./src/`` directory of this project) can be found here:
 
-https://sedelmeyer.github.io/mobile-payment-adoption/modules.html
+https://sedelmeyer.github.io/mobile-payment-adoption/modules.html **[NOT YET AVAILABLE]**
 
 .. _replication:
 
