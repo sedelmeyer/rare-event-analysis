@@ -6,8 +6,14 @@ Future releases
 
 .. todo::
 
-    * Create ``mobile_payment`` sub-module and data pipeline
+    * Create ``logger`` decorators for logging pipeline activities
+    * Create ``mobile_payment`` sub-module and feature pipeline
     * Create ``rare_events`` ``scikit-learn`` helper functions
+
+v0.1.1 (2020-01-21)
+-------------------
+
+* Fix setup.cfg pytest addopts to prevent error with newer pytest versions
 
 v0.1.0 (2020-01-12)
 -------------------
